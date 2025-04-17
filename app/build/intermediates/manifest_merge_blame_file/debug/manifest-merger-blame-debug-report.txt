@@ -1,0 +1,849 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dante.educhat"
+4    android:versionCode="8"
+5    android:versionName="1.0.4" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:6:5-8:36
+12        android:name="android.hardware.camera"
+12-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:7:9-47
+13        android:required="false" />
+13-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:8:9-33
+14
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:10:5-67
+15-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:10:22-64
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:11:5-65
+16-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:11:22-62
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:12:5-79
+17-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:12:22-76
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:13:5-80
+18-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:13:22-77
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:14:5-15:40
+19-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:14:22-78
+20    <uses-permission android:name="android.permission.READ_CONTACTS" />
+20-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:16:5-72
+20-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:16:22-69
+21    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Android package visibility setting -->
+21-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:24:5-79
+21-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:24:22-76
+22    <queries>
+22-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:27:5-38:15
+23
+24        <!-- For browser content -->
+25        <intent>
+25-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:30:9-36:18
+26            <action android:name="android.intent.action.VIEW" />
+26-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:17-69
+26-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
+27
+28            <category android:name="android.intent.category.BROWSABLE" />
+28-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
+28-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
+29
+30            <data android:scheme="https" />
+30-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:39:17-42:51
+30-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:42:21-48
+31        </intent>
+32        <!-- End of browser content -->
+33    </queries>
+34
+35    <uses-permission android:name="android.permission.WAKE_LOCK" />
+35-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:25:5-68
+35-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:25:22-65
+36    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+36-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:27:5-81
+36-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:27:22-78
+37    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+37-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:28:5-77
+37-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:28:22-74
+38    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+38-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\906a4944420af2410168dc1c13cba3fb\transformed\jetified-firebase-iid-21.0.0\AndroidManifest.xml:26:5-82
+38-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\906a4944420af2410168dc1c13cba3fb\transformed\jetified-firebase-iid-21.0.0\AndroidManifest.xml:26:22-79
+39    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+39-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:5-110
+39-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:22-107
+40
+41    <application
+41-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:18:5-131:19
+42        android:allowBackup="true"
+42-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:19:9-35
+43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+43-->[androidx.core:core:1.3.2] C:\Users\luche\.gradle\caches\transforms-3\6563639fe70ad0f101c5d2afa2a22d29\transformed\core-1.3.2\AndroidManifest.xml:24:18-86
+44        android:debuggable="true"
+45        android:fullBackupContent="true"
+45-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:20:9-41
+46        android:icon="@mipmap/ic_launcher"
+46-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:21:9-43
+47        android:label="@string/app_name"
+47-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:22:9-41
+48        android:largeHeap="true"
+48-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:23:9-33
+49        android:roundIcon="@mipmap/ic_launcher_round"
+49-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:24:9-54
+50        android:supportsRtl="true"
+50-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:25:9-35
+51        android:testOnly="true"
+52        android:theme="@style/AppTheme"
+52-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:26:9-40
+53        android:usesCleartextTraffic="true" >
+53-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:28:9-44
+54        <activity
+54-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:31:9-33:72
+55            android:name="com.dante.educhat.general.AboutActivity"
+55-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:31:19-56
+56            android:screenOrientation="portrait"
+56-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:32:13-49
+57            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+57-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:33:13-70
+58        <activity
+58-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:35:9-37:72
+59            android:name="com.dante.educhat.general.ViewNotificationsActivity"
+59-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:35:19-68
+60            android:screenOrientation="portrait"
+60-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:36:13-49
+61            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+61-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:37:13-70
+62        <activity
+62-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:39:9-41:72
+63            android:name="com.dante.educhat.general.StudentProfileActivity"
+63-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:39:19-65
+64            android:screenOrientation="portrait"
+64-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:40:13-49
+65            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+65-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:41:13-70
+66        <activity
+66-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:43:9-45:72
+67            android:name="com.dante.educhat.general.FilterSubjectsActivity"
+67-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:43:19-65
+68            android:screenOrientation="portrait"
+68-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:44:13-49
+69            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+69-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:45:13-70
+70        <activity
+70-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:47:9-49:72
+71            android:name="com.dante.educhat.general.ClassMatesActivity"
+71-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:47:19-61
+72            android:screenOrientation="portrait"
+72-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:48:13-49
+73            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+73-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:49:13-70
+74        <activity
+74-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:51:9-53:72
+75            android:name="com.dante.educhat.general.ReminderActivity"
+75-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:51:19-59
+76            android:screenOrientation="portrait"
+76-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:52:13-49
+77            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+77-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:53:13-70
+78        <activity
+78-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:55:9-57:72
+79            android:name="com.dante.educhat.general.ClassNotesActivity"
+79-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:55:19-61
+80            android:screenOrientation="portrait"
+80-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:56:13-49
+81            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+81-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:57:13-70
+82        <activity
+82-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:59:9-61:72
+83            android:name="com.dante.educhat.general.UploadFilesActivity"
+83-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:59:19-62
+84            android:screenOrientation="portrait"
+84-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:60:13-49
+85            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+85-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:61:13-70
+86        <activity
+86-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:63:9-65:72
+87            android:name="com.dante.educhat.auth.StudentDetailsActivity"
+87-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:63:19-62
+88            android:screenOrientation="portrait"
+88-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:64:13-49
+89            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+89-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:65:13-70
+90        <activity
+90-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:67:9-69:73
+91            android:name="com.dante.educhat.general.HomeActivity"
+91-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:67:19-55
+92            android:screenOrientation="portrait"
+92-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:68:13-49
+93            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+93-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:69:13-70
+94        <activity
+94-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:71:9-78:20
+95            android:name="com.dante.educhat.onboarding.SplashScreenActivity"
+95-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:71:19-66
+96            android:exported="true" >
+96-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:72:13-36
+97            <intent-filter>
+97-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:73:13-77:29
+98                <action android:name="android.intent.action.MAIN" />
+98-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:74:17-69
+98-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:74:25-66
+99
+100                <category android:name="android.intent.category.LAUNCHER" />
+100-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:76:17-77
+100-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:76:27-74
+101            </intent-filter>
+102        </activity>
+103        <activity
+103-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:80:9-82:72
+104            android:name="com.dante.educhat.auth.AuthenticationActivity"
+104-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:80:19-62
+105            android:screenOrientation="portrait"
+105-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:81:13-49
+106            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+106-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:82:13-70
+107        <activity
+107-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:84:9-86:72
+108            android:name="com.dante.educhat.onboarding.GettingStartedActivity"
+108-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:84:19-68
+109            android:screenOrientation="portrait"
+109-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:85:13-49
+110            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+110-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:86:13-70
+111
+112        <meta-data
+112-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:88:9-90:69
+113            android:name="com.google.android.gms.version"
+113-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:89:13-58
+114            android:value="@integer/google_play_services_version" />
+114-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:90:13-66
+115
+116        <!-- Google Ads SDK -->
+117        <meta-data
+117-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:93:9-95:52
+118            android:name="com.google.android.gms.ads.APPLICATION_ID"
+118-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:94:13-69
+119            android:value="@string/admob_app_id" />
+119-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:95:13-49
+120        <meta-data
+120-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:98:9-100:57
+121            android:name="preloaded_fonts"
+121-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:99:13-43
+122            android:resource="@array/preloaded_fonts" />
+122-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:100:13-54
+123        <meta-data
+123-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:102:9-104:49
+124            android:name="com.google.firebase.messaging.default_notification_icon"
+124-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:103:13-83
+125            android:resource="@drawable/logo" />
+125-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:104:13-46
+126        <meta-data
+126-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:106:9-108:54
+127            android:name="com.google.firebase.messaging.default_notification_color"
+127-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:107:13-84
+128            android:resource="@color/colorPrimary" />
+128-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:108:13-51
+129        <meta-data
+129-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:110:9-112:71
+130            android:name="com.google.firebase.messaging.default_notification_channel_id"
+130-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:111:13-89
+131            android:value="@string/default_notification_channel_id" />
+131-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:112:13-68
+132
+133        <service
+133-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:114:9-122:19
+134            android:name="com.dante.educhat.firebase.MyFirebaseMessagingService"
+134-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:115:13-64
+135            android:exported="false"
+135-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:116:13-37
+136            android:permission="com.google.android.c2dm.permission.SEND" >
+136-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:117:13-73
+137            <intent-filter>
+137-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:118:13-121:29
+138                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+138-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:119:17-78
+138-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:119:25-75
+139                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+139-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:120:17-81
+139-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:120:25-78
+140            </intent-filter>
+141        </service>
+142
+143        <receiver android:name="com.dante.educhat.firebase.NotificationBroadcastReceiver" />
+143-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:124:9-126:45
+143-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:125:13-67
+144
+145        <uses-library
+145-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:128:9-130:40
+146            android:name="org.apache.http.legacy"
+146-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:129:13-50
+147            android:required="false" />
+147-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:130:13-37
+148
+149        <service
+149-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\luche\.gradle\caches\transforms-3\4c5218acca0e0db1f541a95ddfa68e80\transformed\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:12:9-18:19
+150            android:name="com.google.firebase.components.ComponentDiscoveryService"
+150-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\luche\.gradle\caches\transforms-3\4c5218acca0e0db1f541a95ddfa68e80\transformed\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:13:13-84
+151            android:directBootAware="true"
+151-->[com.google.firebase:firebase-common:20.2.0] C:\Users\luche\.gradle\caches\transforms-3\40afe5a76ea32faab4eba3c96ddac07e\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+152            android:exported="false" >
+152-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\luche\.gradle\caches\transforms-3\4c5218acca0e0db1f541a95ddfa68e80\transformed\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:14:13-37
+153            <meta-data
+153-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\luche\.gradle\caches\transforms-3\4c5218acca0e0db1f541a95ddfa68e80\transformed\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:15:13-17:85
+154                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+154-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\luche\.gradle\caches\transforms-3\4c5218acca0e0db1f541a95ddfa68e80\transformed\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:16:17-122
+155                android:value="com.google.firebase.components.ComponentRegistrar" />
+155-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\luche\.gradle\caches\transforms-3\4c5218acca0e0db1f541a95ddfa68e80\transformed\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:17:17-82
+156            <meta-data
+156-->[com.google.firebase:firebase-crashlytics-ktx:17.2.2] C:\Users\luche\.gradle\caches\transforms-3\f9f7de5d9fc4899c511de36108546540\transformed\jetified-firebase-crashlytics-ktx-17.2.2\AndroidManifest.xml:27:13-29:85
+157                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar"
+157-->[com.google.firebase:firebase-crashlytics-ktx:17.2.2] C:\Users\luche\.gradle\caches\transforms-3\f9f7de5d9fc4899c511de36108546540\transformed\jetified-firebase-crashlytics-ktx-17.2.2\AndroidManifest.xml:28:17-130
+158                android:value="com.google.firebase.components.ComponentRegistrar" />
+158-->[com.google.firebase:firebase-crashlytics-ktx:17.2.2] C:\Users\luche\.gradle\caches\transforms-3\f9f7de5d9fc4899c511de36108546540\transformed\jetified-firebase-crashlytics-ktx-17.2.2\AndroidManifest.xml:29:17-82
+159            <meta-data
+159-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\860847669570b0294d7ca5a9e2dc37a1\transformed\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:11:13-13:85
+160                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+160-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\860847669570b0294d7ca5a9e2dc37a1\transformed\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:12:17-126
+161                android:value="com.google.firebase.components.ComponentRegistrar" />
+161-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\860847669570b0294d7ca5a9e2dc37a1\transformed\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:13:17-82
+162            <meta-data
+162-->[com.google.firebase:firebase-database-ktx:19.5.1] C:\Users\luche\.gradle\caches\transforms-3\467c84cd13ea6628e8f4aa4ae160153f\transformed\jetified-firebase-database-ktx-19.5.1\AndroidManifest.xml:15:13-17:85
+163                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+163-->[com.google.firebase:firebase-database-ktx:19.5.1] C:\Users\luche\.gradle\caches\transforms-3\467c84cd13ea6628e8f4aa4ae160153f\transformed\jetified-firebase-database-ktx-19.5.1\AndroidManifest.xml:16:17-124
+164                android:value="com.google.firebase.components.ComponentRegistrar" />
+164-->[com.google.firebase:firebase-database-ktx:19.5.1] C:\Users\luche\.gradle\caches\transforms-3\467c84cd13ea6628e8f4aa4ae160153f\transformed\jetified-firebase-database-ktx-19.5.1\AndroidManifest.xml:17:17-82
+165            <meta-data
+165-->[com.google.firebase:firebase-messaging-ktx:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\e8db838529edd73b94f78c6fe674cc7a\transformed\jetified-firebase-messaging-ktx-21.0.0\AndroidManifest.xml:29:13-31:85
+166                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
+166-->[com.google.firebase:firebase-messaging-ktx:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\e8db838529edd73b94f78c6fe674cc7a\transformed\jetified-firebase-messaging-ktx-21.0.0\AndroidManifest.xml:30:17-126
+167                android:value="com.google.firebase.components.ComponentRegistrar" />
+167-->[com.google.firebase:firebase-messaging-ktx:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\e8db838529edd73b94f78c6fe674cc7a\transformed\jetified-firebase-messaging-ktx-21.0.0\AndroidManifest.xml:31:17-82
+168            <meta-data
+168-->[com.google.firebase:firebase-common-ktx:19.3.1] C:\Users\luche\.gradle\caches\transforms-3\8910324bb64857c07c44cb63d5bb7ae2\transformed\jetified-firebase-common-ktx-19.3.1\AndroidManifest.xml:15:13-17:85
+169                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+169-->[com.google.firebase:firebase-common-ktx:19.3.1] C:\Users\luche\.gradle\caches\transforms-3\8910324bb64857c07c44cb63d5bb7ae2\transformed\jetified-firebase-common-ktx-19.3.1\AndroidManifest.xml:16:17-113
+170                android:value="com.google.firebase.components.ComponentRegistrar" />
+170-->[com.google.firebase:firebase-common-ktx:19.3.1] C:\Users\luche\.gradle\caches\transforms-3\8910324bb64857c07c44cb63d5bb7ae2\transformed\jetified-firebase-common-ktx-19.3.1\AndroidManifest.xml:17:17-82
+171            <meta-data
+171-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:77:13-79:85
+172                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+172-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:78:17-109
+173                android:value="com.google.firebase.components.ComponentRegistrar" />
+173-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:79:17-82
+174            <meta-data
+174-->[com.google.firebase:firebase-database:20.1.0] C:\Users\luche\.gradle\caches\transforms-3\966fd0b6bee9a86704e4d8ebdf71c956\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+175                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+175-->[com.google.firebase:firebase-database:20.1.0] C:\Users\luche\.gradle\caches\transforms-3\966fd0b6bee9a86704e4d8ebdf71c956\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+176                android:value="com.google.firebase.components.ComponentRegistrar" />
+176-->[com.google.firebase:firebase-database:20.1.0] C:\Users\luche\.gradle\caches\transforms-3\966fd0b6bee9a86704e4d8ebdf71c956\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+177            <meta-data
+177-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\35427a95398befc61689cc8f482cca36\transformed\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:39:13-41:85
+178                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+178-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\35427a95398befc61689cc8f482cca36\transformed\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:40:17-119
+179                android:value="com.google.firebase.components.ComponentRegistrar" />
+179-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\35427a95398befc61689cc8f482cca36\transformed\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:41:17-82
+180            <meta-data
+180-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\906a4944420af2410168dc1c13cba3fb\transformed\jetified-firebase-iid-21.0.0\AndroidManifest.xml:32:13-34:85
+181                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+181-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\906a4944420af2410168dc1c13cba3fb\transformed\jetified-firebase-iid-21.0.0\AndroidManifest.xml:33:17-96
+182                android:value="com.google.firebase.components.ComponentRegistrar" />
+182-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\906a4944420af2410168dc1c13cba3fb\transformed\jetified-firebase-iid-21.0.0\AndroidManifest.xml:34:17-82
+183            <meta-data
+183-->[com.google.firebase:firebase-crashlytics:17.2.2] C:\Users\luche\.gradle\caches\transforms-3\282aa4a40fb54672a2067ed386a97a33\transformed\jetified-firebase-crashlytics-17.2.2\AndroidManifest.xml:16:13-18:85
+184                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+184-->[com.google.firebase:firebase-crashlytics:17.2.2] C:\Users\luche\.gradle\caches\transforms-3\282aa4a40fb54672a2067ed386a97a33\transformed\jetified-firebase-crashlytics-17.2.2\AndroidManifest.xml:17:17-115
+185                android:value="com.google.firebase.components.ComponentRegistrar" />
+185-->[com.google.firebase:firebase-crashlytics:17.2.2] C:\Users\luche\.gradle\caches\transforms-3\282aa4a40fb54672a2067ed386a97a33\transformed\jetified-firebase-crashlytics-17.2.2\AndroidManifest.xml:18:17-82
+186            <meta-data
+186-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\luche\.gradle\caches\transforms-3\9a90adcdcef50100e2106631c8c529d5\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+187                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+187-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\luche\.gradle\caches\transforms-3\9a90adcdcef50100e2106631c8c529d5\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+188                android:value="com.google.firebase.components.ComponentRegistrar" />
+188-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\luche\.gradle\caches\transforms-3\9a90adcdcef50100e2106631c8c529d5\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+189            <meta-data
+189-->[com.google.firebase:firebase-storage:19.2.0] C:\Users\luche\.gradle\caches\transforms-3\916c722644beb18b0c69863594276200\transformed\jetified-firebase-storage-19.2.0\AndroidManifest.xml:33:13-35:85
+190                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+190-->[com.google.firebase:firebase-storage:19.2.0] C:\Users\luche\.gradle\caches\transforms-3\916c722644beb18b0c69863594276200\transformed\jetified-firebase-storage-19.2.0\AndroidManifest.xml:34:17-107
+191                android:value="com.google.firebase.components.ComponentRegistrar" />
+191-->[com.google.firebase:firebase-storage:19.2.0] C:\Users\luche\.gradle\caches\transforms-3\916c722644beb18b0c69863594276200\transformed\jetified-firebase-storage-19.2.0\AndroidManifest.xml:35:17-82
+192            <meta-data
+192-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\4e137125858bbb6895683e48bc786486\transformed\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:30:13-32:85
+193                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+193-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\4e137125858bbb6895683e48bc786486\transformed\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:31:17-139
+194                android:value="com.google.firebase.components.ComponentRegistrar" />
+194-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\4e137125858bbb6895683e48bc786486\transformed\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:32:17-82
+195            <meta-data
+195-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\luche\.gradle\caches\transforms-3\7065122060c8a83b3a54c14f60e4ebea\transformed\jetified-firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
+196                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+196-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\luche\.gradle\caches\transforms-3\7065122060c8a83b3a54c14f60e4ebea\transformed\jetified-firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+197                android:value="com.google.firebase.components.ComponentRegistrar" />
+197-->[com.google.firebase:firebase-installations:16.3.3] C:\Users\luche\.gradle\caches\transforms-3\7065122060c8a83b3a54c14f60e4ebea\transformed\jetified-firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
+198        </service>
+199
+200        <activity
+200-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:27:9-44:20
+201            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+201-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:28:13-80
+202            android:excludeFromRecents="true"
+202-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:29:13-46
+203            android:exported="true"
+203-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:30:13-36
+204            android:launchMode="singleTask"
+204-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:31:13-44
+205            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+205-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:32:13-72
+206            <intent-filter>
+206-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:33:13-43:29
+207                <action android:name="android.intent.action.VIEW" />
+207-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:17-69
+207-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
+208
+209                <category android:name="android.intent.category.DEFAULT" />
+209-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:17-76
+209-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:27-73
+210                <category android:name="android.intent.category.BROWSABLE" />
+210-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
+210-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
+211
+212                <data
+212-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:39:17-42:51
+213                    android:host="firebase.auth"
+213-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:40:21-49
+214                    android:path="/"
+214-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:41:21-37
+215                    android:scheme="genericidp" />
+215-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:42:21-48
+216            </intent-filter>
+217        </activity>
+218        <activity
+218-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:45:9-62:20
+219            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+219-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:46:13-79
+220            android:excludeFromRecents="true"
+220-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:47:13-46
+221            android:exported="true"
+221-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:48:13-36
+222            android:launchMode="singleTask"
+222-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:49:13-44
+223            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+223-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:50:13-72
+224            <intent-filter>
+224-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:51:13-61:29
+225                <action android:name="android.intent.action.VIEW" />
+225-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:17-69
+225-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:34:25-66
+226
+227                <category android:name="android.intent.category.DEFAULT" />
+227-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:17-76
+227-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:27-73
+228                <category android:name="android.intent.category.BROWSABLE" />
+228-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:17-78
+228-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:37:27-75
+229
+230                <data
+230-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:39:17-42:51
+231                    android:host="firebase.auth"
+231-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:40:21-49
+232                    android:path="/"
+232-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:41:21-37
+233                    android:scheme="recaptcha" />
+233-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:42:21-48
+234            </intent-filter>
+235        </activity>
+236
+237        <service
+237-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:64:9-73:19
+238            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+238-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:65:13-101
+239            android:enabled="true"
+239-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:66:13-35
+240            android:exported="false" >
+240-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:67:13-37
+241            <intent-filter>
+241-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:68:13-72:29
+242                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+242-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:69:17-89
+242-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:69:25-86
+243
+244                <category android:name="android.intent.category.DEFAULT" />
+244-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:17-76
+244-->[com.google.firebase:firebase-auth:20.0.1] C:\Users\luche\.gradle\caches\transforms-3\162ed45432a738931baf105cdcceefd1\transformed\jetified-firebase-auth-20.0.1\AndroidManifest.xml:36:27-73
+245            </intent-filter>
+246        </service> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+247        <activity
+247-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:43:9-47:64
+248            android:name="com.google.android.gms.ads.AdActivity"
+248-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:44:13-65
+249            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+249-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:45:13-122
+250            android:exported="false"
+250-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:46:13-37
+251            android:theme="@android:style/Theme.Translucent" />
+251-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:47:13-61
+252
+253        <provider
+253-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:49:9-53:39
+254            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+254-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:50:13-76
+255            android:authorities="com.dante.educhat.mobileadsinitprovider"
+255-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:51:13-73
+256            android:exported="false"
+256-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:52:13-37
+257            android:initOrder="100" />
+257-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:53:13-36
+258
+259        <service
+259-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:55:9-58:40
+260            android:name="com.google.android.gms.ads.AdService"
+260-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:56:13-64
+261            android:enabled="true"
+261-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:57:13-35
+262            android:exported="false" />
+262-->[com.google.android.gms:play-services-ads-lite:19.6.0] C:\Users\luche\.gradle\caches\transforms-3\57877ab3227621f3b463c8c85504340b\transformed\jetified-play-services-ads-lite-19.6.0\AndroidManifest.xml:58:13-37
+263
+264        <provider
+264-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:31:9-37:35
+265            android:name="androidx.work.impl.WorkManagerInitializer"
+265-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:32:13-69
+266            android:authorities="com.dante.educhat.workmanager-init"
+266-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:33:13-68
+267            android:directBootAware="false"
+267-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:34:13-44
+268            android:exported="false"
+268-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:35:13-37
+269            android:multiprocess="true" />
+269-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:36:13-40
+270
+271        <service
+271-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:39:9-44:35
+272            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+272-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:40:13-88
+273            android:directBootAware="false"
+273-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:41:13-44
+274            android:enabled="@bool/enable_system_alarm_service_default"
+274-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:42:13-72
+275            android:exported="false" />
+275-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:43:13-37
+276        <service
+276-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:45:9-51:35
+277            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+277-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:46:13-84
+278            android:directBootAware="false"
+278-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:47:13-44
+279            android:enabled="@bool/enable_system_job_service_default"
+279-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:48:13-70
+280            android:exported="true"
+280-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:49:13-36
+281            android:permission="android.permission.BIND_JOB_SERVICE" />
+281-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:50:13-69
+282        <service
+282-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:52:9-57:35
+283            android:name="androidx.work.impl.foreground.SystemForegroundService"
+283-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:53:13-81
+284            android:directBootAware="false"
+284-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:54:13-44
+285            android:enabled="@bool/enable_system_foreground_service_default"
+285-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:55:13-77
+286            android:exported="false" />
+286-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:56:13-37
+287
+288        <receiver
+288-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:59:9-64:35
+289            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+289-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:60:13-88
+290            android:directBootAware="false"
+290-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:61:13-44
+291            android:enabled="true"
+291-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:62:13-35
+292            android:exported="false" />
+292-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:63:13-37
+293        <receiver
+293-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:65:9-75:20
+294            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+294-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:66:13-106
+295            android:directBootAware="false"
+295-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:67:13-44
+296            android:enabled="false"
+296-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:68:13-36
+297            android:exported="false" >
+297-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:69:13-37
+298            <intent-filter>
+298-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:71:13-74:29
+299                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+299-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:72:17-87
+299-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:72:25-84
+300                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+300-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:73:17-90
+300-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:73:25-87
+301            </intent-filter>
+302        </receiver>
+303        <receiver
+303-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:76:9-86:20
+304            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+304-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:77:13-104
+305            android:directBootAware="false"
+305-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:78:13-44
+306            android:enabled="false"
+306-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:79:13-36
+307            android:exported="false" >
+307-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:80:13-37
+308            <intent-filter>
+308-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:82:13-85:29
+309                <action android:name="android.intent.action.BATTERY_OKAY" />
+309-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:83:17-77
+309-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:83:25-74
+310                <action android:name="android.intent.action.BATTERY_LOW" />
+310-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:84:17-76
+310-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:84:25-73
+311            </intent-filter>
+312        </receiver>
+313        <receiver
+313-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:87:9-97:20
+314            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+314-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:88:13-104
+315            android:directBootAware="false"
+315-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:89:13-44
+316            android:enabled="false"
+316-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:90:13-36
+317            android:exported="false" >
+317-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:91:13-37
+318            <intent-filter>
+318-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:93:13-96:29
+319                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+319-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:94:17-83
+319-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:94:25-80
+320                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+320-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:95:17-82
+320-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:95:25-79
+321            </intent-filter>
+322        </receiver>
+323        <receiver
+323-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:98:9-107:20
+324            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+324-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:99:13-103
+325            android:directBootAware="false"
+325-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:100:13-44
+326            android:enabled="false"
+326-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:101:13-36
+327            android:exported="false" >
+327-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:102:13-37
+328            <intent-filter>
+328-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:104:13-106:29
+329                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+329-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:105:17-79
+329-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:105:25-76
+330            </intent-filter>
+331        </receiver>
+332        <receiver
+332-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:108:9-119:20
+333            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+333-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:109:13-88
+334            android:directBootAware="false"
+334-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:110:13-44
+335            android:enabled="false"
+335-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:111:13-36
+336            android:exported="false" >
+336-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:112:13-37
+337            <intent-filter>
+337-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:114:13-118:29
+338                <action android:name="android.intent.action.BOOT_COMPLETED" />
+338-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:115:17-79
+338-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:115:25-76
+339                <action android:name="android.intent.action.TIME_SET" />
+339-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:116:17-73
+339-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:116:25-70
+340                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+340-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:117:17-81
+340-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:117:25-78
+341            </intent-filter>
+342        </receiver>
+343        <receiver
+343-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:120:9-129:20
+344            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+344-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:121:13-99
+345            android:directBootAware="false"
+345-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:122:13-44
+346            android:enabled="@bool/enable_system_alarm_service_default"
+346-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:123:13-72
+347            android:exported="false" >
+347-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:124:13-37
+348            <intent-filter>
+348-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:126:13-128:29
+349                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+349-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:127:17-98
+349-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:127:25-95
+350            </intent-filter>
+351        </receiver>
+352        <receiver
+352-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:130:9-140:20
+353            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+353-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:131:13-78
+354            android:directBootAware="false"
+354-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:132:13-44
+355            android:enabled="true"
+355-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:133:13-35
+356            android:exported="true"
+356-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:134:13-36
+357            android:permission="android.permission.DUMP" >
+357-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:135:13-57
+358            <intent-filter>
+358-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:137:13-139:29
+359                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+359-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:138:17-88
+359-->[androidx.work:work-runtime:2.4.0] C:\Users\luche\.gradle\caches\transforms-3\696401bcc905f7caa808083cf8a5fb47\transformed\work-runtime-2.4.0\AndroidManifest.xml:138:25-85
+360            </intent-filter>
+361        </receiver>
+362        <!--
+363             FirebaseMessagingService performs security checks at runtime,
+364             but set to not exported to explicitly avoid allowing another app to call it.
+365        -->
+366        <service
+366-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\35427a95398befc61689cc8f482cca36\transformed\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:28:9-35:19
+367            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+367-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\35427a95398befc61689cc8f482cca36\transformed\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:29:13-82
+368            android:directBootAware="true"
+368-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\35427a95398befc61689cc8f482cca36\transformed\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:30:13-43
+369            android:exported="false" >
+369-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\35427a95398befc61689cc8f482cca36\transformed\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:31:13-37
+370            <intent-filter android:priority="-500" >
+370-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\35427a95398befc61689cc8f482cca36\transformed\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:13-34:29
+370-->[com.google.firebase:firebase-messaging:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\35427a95398befc61689cc8f482cca36\transformed\jetified-firebase-messaging-21.0.0\AndroidManifest.xml:32:28-51
+371                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+371-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:119:17-78
+371-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:119:25-75
+372            </intent-filter>
+373        </service>
+374
+375        <receiver
+375-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\906a4944420af2410168dc1c13cba3fb\transformed\jetified-firebase-iid-21.0.0\AndroidManifest.xml:37:9-44:20
+376            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+376-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\906a4944420af2410168dc1c13cba3fb\transformed\jetified-firebase-iid-21.0.0\AndroidManifest.xml:38:13-78
+377            android:exported="true"
+377-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\906a4944420af2410168dc1c13cba3fb\transformed\jetified-firebase-iid-21.0.0\AndroidManifest.xml:39:13-36
+378            android:permission="com.google.android.c2dm.permission.SEND" >
+378-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\906a4944420af2410168dc1c13cba3fb\transformed\jetified-firebase-iid-21.0.0\AndroidManifest.xml:40:13-73
+379            <intent-filter>
+379-->[com.google.firebase:firebase-iid:21.0.0] C:\Users\luche\.gradle\caches\transforms-3\906a4944420af2410168dc1c13cba3fb\transformed\jetified-firebase-iid-21.0.0\AndroidManifest.xml:41:13-43:29
+380                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+380-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:120:17-81
+380-->C:\Users\luche\Desktop\EduChat\app\src\main\AndroidManifest.xml:120:25-78
+381            </intent-filter>
+382        </receiver>
+383
+384        <activity
+384-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\luche\.gradle\caches\transforms-3\9701776afce241fb85fc6927c2a2193c\transformed\jetified-play-services-auth-19.0.0\AndroidManifest.xml:23:9-27:75
+385            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+385-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\luche\.gradle\caches\transforms-3\9701776afce241fb85fc6927c2a2193c\transformed\jetified-play-services-auth-19.0.0\AndroidManifest.xml:24:13-93
+386            android:excludeFromRecents="true"
+386-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\luche\.gradle\caches\transforms-3\9701776afce241fb85fc6927c2a2193c\transformed\jetified-play-services-auth-19.0.0\AndroidManifest.xml:25:13-46
+387            android:exported="false"
+387-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\luche\.gradle\caches\transforms-3\9701776afce241fb85fc6927c2a2193c\transformed\jetified-play-services-auth-19.0.0\AndroidManifest.xml:26:13-37
+388            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+388-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\luche\.gradle\caches\transforms-3\9701776afce241fb85fc6927c2a2193c\transformed\jetified-play-services-auth-19.0.0\AndroidManifest.xml:27:13-72
+389        <!--
+390            Service handling Google Sign-In user revocation. For apps that do not integrate with
+391            Google Sign-In, this service will never be started.
+392        -->
+393        <service
+393-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\luche\.gradle\caches\transforms-3\9701776afce241fb85fc6927c2a2193c\transformed\jetified-play-services-auth-19.0.0\AndroidManifest.xml:33:9-37:51
+394            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+394-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\luche\.gradle\caches\transforms-3\9701776afce241fb85fc6927c2a2193c\transformed\jetified-play-services-auth-19.0.0\AndroidManifest.xml:34:13-89
+395            android:exported="true"
+395-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\luche\.gradle\caches\transforms-3\9701776afce241fb85fc6927c2a2193c\transformed\jetified-play-services-auth-19.0.0\AndroidManifest.xml:35:13-36
+396            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+396-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\luche\.gradle\caches\transforms-3\9701776afce241fb85fc6927c2a2193c\transformed\jetified-play-services-auth-19.0.0\AndroidManifest.xml:36:13-107
+397            android:visibleToInstantApps="true" />
+397-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\luche\.gradle\caches\transforms-3\9701776afce241fb85fc6927c2a2193c\transformed\jetified-play-services-auth-19.0.0\AndroidManifest.xml:37:13-48
+398        <service
+398-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\luche\.gradle\caches\transforms-3\79ae15ea8a542c1771c388f41eea536f\transformed\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:29:9-35:19
+399            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+399-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\luche\.gradle\caches\transforms-3\79ae15ea8a542c1771c388f41eea536f\transformed\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:30:13-103
+400            android:exported="false" >
+400-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\luche\.gradle\caches\transforms-3\79ae15ea8a542c1771c388f41eea536f\transformed\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:31:13-37
+401            <meta-data
+401-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\luche\.gradle\caches\transforms-3\79ae15ea8a542c1771c388f41eea536f\transformed\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:32:13-34:39
+402                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+402-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\luche\.gradle\caches\transforms-3\79ae15ea8a542c1771c388f41eea536f\transformed\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:33:17-94
+403                android:value="cct" />
+403-->[com.google.android.datatransport:transport-backend-cct:2.3.1] C:\Users\luche\.gradle\caches\transforms-3\79ae15ea8a542c1771c388f41eea536f\transformed\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:34:17-36
+404        </service>
+405
+406        <provider
+406-->[com.google.firebase:firebase-common:20.2.0] C:\Users\luche\.gradle\caches\transforms-3\40afe5a76ea32faab4eba3c96ddac07e\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+407            android:name="com.google.firebase.provider.FirebaseInitProvider"
+407-->[com.google.firebase:firebase-common:20.2.0] C:\Users\luche\.gradle\caches\transforms-3\40afe5a76ea32faab4eba3c96ddac07e\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+408            android:authorities="com.dante.educhat.firebaseinitprovider"
+408-->[com.google.firebase:firebase-common:20.2.0] C:\Users\luche\.gradle\caches\transforms-3\40afe5a76ea32faab4eba3c96ddac07e\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+409            android:directBootAware="true"
+409-->[com.google.firebase:firebase-common:20.2.0] C:\Users\luche\.gradle\caches\transforms-3\40afe5a76ea32faab4eba3c96ddac07e\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+410            android:exported="false"
+410-->[com.google.firebase:firebase-common:20.2.0] C:\Users\luche\.gradle\caches\transforms-3\40afe5a76ea32faab4eba3c96ddac07e\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+411            android:initOrder="100" />
+411-->[com.google.firebase:firebase-common:20.2.0] C:\Users\luche\.gradle\caches\transforms-3\40afe5a76ea32faab4eba3c96ddac07e\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+412
+413        <activity
+413-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\luche\.gradle\caches\transforms-3\6759fb8212fb8dc46a08c1cb13bc8f65\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+414            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+414-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\luche\.gradle\caches\transforms-3\6759fb8212fb8dc46a08c1cb13bc8f65\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+415            android:exported="false"
+415-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\luche\.gradle\caches\transforms-3\6759fb8212fb8dc46a08c1cb13bc8f65\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+416            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+416-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\luche\.gradle\caches\transforms-3\6759fb8212fb8dc46a08c1cb13bc8f65\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+417
+418        <receiver
+418-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:29:9-33:20
+419            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+419-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:30:13-85
+420            android:enabled="true"
+420-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:31:13-35
+421            android:exported="false" >
+421-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:32:13-37
+422        </receiver>
+423
+424        <service
+424-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:35:9-38:40
+425            android:name="com.google.android.gms.measurement.AppMeasurementService"
+425-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:36:13-84
+426            android:enabled="true"
+426-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:37:13-35
+427            android:exported="false" />
+427-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:38:13-37
+428        <service
+428-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:39:9-43:72
+429            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+429-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:40:13-87
+430            android:enabled="true"
+430-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:41:13-35
+431            android:exported="false"
+431-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:42:13-37
+432            android:permission="android.permission.BIND_JOB_SERVICE" />
+432-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\luche\.gradle\caches\transforms-3\5ed730fdef7773bfda8cca993977dad5\transformed\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:43:13-69
+433        <service
+433-->[androidx.room:room-runtime:2.2.5] C:\Users\luche\.gradle\caches\transforms-3\e38e43974e31337909b05a6932cead00\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+434            android:name="androidx.room.MultiInstanceInvalidationService"
+434-->[androidx.room:room-runtime:2.2.5] C:\Users\luche\.gradle\caches\transforms-3\e38e43974e31337909b05a6932cead00\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+435            android:directBootAware="true"
+435-->[androidx.room:room-runtime:2.2.5] C:\Users\luche\.gradle\caches\transforms-3\e38e43974e31337909b05a6932cead00\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+436            android:exported="false" />
+436-->[androidx.room:room-runtime:2.2.5] C:\Users\luche\.gradle\caches\transforms-3\e38e43974e31337909b05a6932cead00\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+437        <service
+437-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\luche\.gradle\caches\transforms-3\d3475240be0f52de5e106c899cbdc54c\transformed\jetified-transport-runtime-2.2.4\AndroidManifest.xml:26:9-30:19
+438            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+438-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\luche\.gradle\caches\transforms-3\d3475240be0f52de5e106c899cbdc54c\transformed\jetified-transport-runtime-2.2.4\AndroidManifest.xml:27:13-117
+439            android:exported="false"
+439-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\luche\.gradle\caches\transforms-3\d3475240be0f52de5e106c899cbdc54c\transformed\jetified-transport-runtime-2.2.4\AndroidManifest.xml:28:13-37
+440            android:permission="android.permission.BIND_JOB_SERVICE" >
+440-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\luche\.gradle\caches\transforms-3\d3475240be0f52de5e106c899cbdc54c\transformed\jetified-transport-runtime-2.2.4\AndroidManifest.xml:29:13-69
+441        </service>
+442
+443        <receiver
+443-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\luche\.gradle\caches\transforms-3\d3475240be0f52de5e106c899cbdc54c\transformed\jetified-transport-runtime-2.2.4\AndroidManifest.xml:32:9-34:40
+444            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+444-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\luche\.gradle\caches\transforms-3\d3475240be0f52de5e106c899cbdc54c\transformed\jetified-transport-runtime-2.2.4\AndroidManifest.xml:33:13-132
+445            android:exported="false" />
+445-->[com.google.android.datatransport:transport-runtime:2.2.4] C:\Users\luche\.gradle\caches\transforms-3\d3475240be0f52de5e106c899cbdc54c\transformed\jetified-transport-runtime-2.2.4\AndroidManifest.xml:34:13-37
+446    </application>
+447
+448</manifest>

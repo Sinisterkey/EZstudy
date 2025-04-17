@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.dante.educhat.app-mergeDebugResources-27:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\luche\\.gradle\\caches\\transforms-3\\fb883a27fdbf03ed468f5f56d288b294\\transformed\\appcompat-1.2.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
